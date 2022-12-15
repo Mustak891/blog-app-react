@@ -18,7 +18,7 @@ import {
     useEffect(() => {
       const fetchHandler = async () => {
         await axios
-          .get(`https://book-application.herokuapp.com/books/${id}`)
+          .get(`https://blog-app-node-alpha.vercel.app/books/${id}`)
           .then((res) => res.data)
           .then((data) => setInputs(data.book));
       };
@@ -27,7 +27,7 @@ import {
   
     const sendRequest = async () => {
       await axios
-        .put(`https://book-application.herokuapp.com/books/${id}`, {
+        .put(`https://blog-app-node-alpha.vercel.app/books/${id}`, {
           name: String(inputs.name),
           author: String(inputs.author),
           description: String(inputs.description),

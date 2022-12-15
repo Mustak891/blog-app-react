@@ -9,7 +9,7 @@ const Book = (props) => {
  
     const deleteHandler = async () => {
       await axios
-        .delete(`https://book-application.herokuapp.com/books/${_id}`)
+        .delete(`https://blog-app-node-alpha.vercel.app/books/${_id}`)
         .then((res) => res.data)
         .then(() => history("/"))
     };

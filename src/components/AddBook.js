@@ -30,7 +30,7 @@ import {
   
     const sendRequest = async () => {
       await axios
-        .post("https://book-application.herokuapp.com/books", {
+        .post("https://blog-app-node-alpha.vercel.app/books", {
           name: String(inputs.name),
           author: String(inputs.author),
           description: String(inputs.description),
